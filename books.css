@@ -1,0 +1,84 @@
+.button {
+	background-color: lightyellow;
+	color: darkblue;
+	border: 1px solid black;
+}
+
+.cache {
+	visibility: visible;
+	display: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2{
+	cursor: pointer;
+}
+
+ol{
+	list-style: decimal;
+	counter-reset: books-counter;
+	padding: 0;
+}
+
+li {
+	padding: 20px;
+	margin: 20px;
+	
+	
+}
+
+div.title {
+	font-style: bold;
+	counter-increment: books-counter;
+	color: blue;
+	font-size: 150%;
+}
+
+div.title::before {
+	content: counter(books-counter) ".";
+	margin-right: 10px;
+	display: inline-block;
+}
+
+dl {
+	display :block;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 0.5em;
+	margin: 1em 0 0.5em 0;
+
+}
+
+
+dt {
+	display: flex;
+	color: indigo;
+	font-weight: bold;
+	
+}
+
+dd {
+	color: darkgreen;
+}
+
+p {
+	color: green;
+}
+
+table {
+	border-collapse: collapse;
+	display: inline-block;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+th, td {
+	border: 1px solid black;
+	padding: 4px;
+}
